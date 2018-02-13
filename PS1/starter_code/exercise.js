@@ -19,7 +19,7 @@ exercise.run = function() {
 };
 exercise.updatePosition = function() {
     exercise.pos.x += exercise.increment
-    exercise.img1.style.left = exercise.pos.x + 'px' //how to write notation??
+    exercise.img1.style.left = exercise.pos.x + 'px' 
 
     // increment exercise.pos.x by increment 
     // now set image position using img1.style.left 
