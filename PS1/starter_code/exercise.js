@@ -56,13 +56,13 @@ exercise.chooseImage = function() {
 };
 exercise.checkWallCollision = function() {
     if (exercise.pos.x>0 && exercise.pos.x<(exercise.bw-exercise.img1.width)){
-        exercise.increment = exercise.increment
+        exercise.increment = exercise.increment; //collision
     }
     else if (exercise.pos.x==(exercise.bw-exercise.img1.width) && exercise.increment>0){
-        exercise.increment = -1 * exercise.increment
+        exercise.increment = -1 * exercise.increment; //collision with right side of wall (occurs when x=600 since browserwidth=800 and imgwidth=200)
     }
     else if (exercise.pos.x==0 && exercise.increment<0){
-        exercise.increment = -1 * exercise.increment
+        exercise.increment = -1 * exercise.increment; //collision with left side of wall
     }
   
 
